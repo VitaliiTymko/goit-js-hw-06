@@ -20,6 +20,7 @@ for (let i = 0; i < ingredients.length; i += 1) {
 // console.log(555);
 console.log(arrayLi);
 newArrayRef.append(...arrayLi);
+console.log(newArrayRef);
 
 
 // Напиши скрипт, который для каждого элемента массива ingredients:
