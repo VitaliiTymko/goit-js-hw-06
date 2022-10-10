@@ -1,17 +1,17 @@
 const inputRef = document.querySelector("input")
-console.log(inputRef);
-console.log(inputRef.dataset.length);
+// console.log(inputRef);
+// console.log(inputRef.dataset.length);
 
 
 inputRef.addEventListener("blur", (event) => {
-    console.log(event.currentTarget.value);
-    console.log(event.currentTarget.value.length);
+    // console.log(event.currentTarget.value);
+    // console.log(event.currentTarget.value.length);
 
-    if (Number(event.currentTarget.value.length) !== Number(inputRef.dataset.length)) {        
-        console.log(555);
-        inputRef.classList.add("invalid");
-        } else {
+    if (Number(event.currentTarget.value.length) === Number(inputRef.dataset.length)) {        
+        // console.log(555);
         inputRef.classList.add("valid");
+        } else {
+        inputRef.classList.add("invalid");
     }      
     });
 
