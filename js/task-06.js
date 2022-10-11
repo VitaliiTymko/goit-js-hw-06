@@ -10,8 +10,10 @@ inputRef.addEventListener("blur", (event) => {
     if (Number(event.currentTarget.value.length) === Number(inputRef.dataset.length)) {        
         // console.log(555);
         inputRef.classList.add("valid");
+        inputRef.classList.remove("invalid");
         } else {
         inputRef.classList.add("invalid");
+        inputRef.classList.remove("valid");
     }      
     });
 
